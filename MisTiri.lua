@@ -1607,15 +1607,7 @@ Redis:srem(MisTiri.."Manger:Group"..msg.chat_id,msg.sender_id.user_id)
 Redis:srem(MisTiri.."Admin:Group"..msg.chat_id,msg.sender_id.user_id)
 Redis:srem(MisTiri.."Special:Group"..msg.chat_id,msg.sender_id.user_id)
 if Json_Info.ok == false and Json_Info.error_code == 400 and Json_Info.description == "Bad Request: CHAT_ADMIN_REQUIRED" then
-if #monsha ~= 0 then 
-local ListMembers = '\n*✠┊تاك للمالكين  \n 
-┉┉┉┉┉┉┉┉┉┉*\n'
-for k, v in pairs(monsha) do
-local UserInfo = bot.getUser(v)
-if UserInfo and UserInfo.username and UserInfo.username ~= "" then
-ListMembers = ListMembers.."*"..k.." - *[@"..UserInfo.username.."](tg://user?id="..v..")\n"
-else
-ListMembers = ListMembers.."*"..k.." -* ["..v.."](tg://user?id="..v..")\n"
+
 end
 end
 local v = monsha[1]
@@ -1626,15 +1618,7 @@ send(msg_chat_id,msg_id,tecxt,"md")
 end
 end
 if Json_Info.ok == false and Json_Info.error_code == 400 and Json_Info.description == "Bad Request: can't remove chat owner" then
-if #monsha ~= 0 then 
-local ListMembers = '\n*✠┊تاك للمالكين  \n 
-┉┉┉┉┉┉┉┉┉┉*\n'
-for k, v in pairs(monsha) do
-local UserInfo = bot.getUser(v)
-if UserInfo and UserInfo.username and UserInfo.username ~= "" then
-ListMembers = ListMembers.."*"..k.." - *[@"..UserInfo.username.."](tg://user?id="..v..")\n"
-else
-ListMembers = ListMembers.."*"..k.." -* ["..v.."](tg://user?id="..v..")\n"
+
 end
 end
 local tecxt = ListMembers.."\n✠┊ نداء للمالك {[ > Click < ](tg://user?id="..v..")}"..
@@ -1644,15 +1628,7 @@ send(msg_chat_id,msg_id,tecxt,"md")
 end
 end
 if Json_Info.ok == true and Json_Info.result == true then
-if #monsha ~= 0 then 
-local ListMembers = '\n*✠┊تاك للمالكين  \n 
-┉┉┉┉┉┉┉┉┉┉*\n'
-for k, v in pairs(monsha) do
-local UserInfo = bot.getUser(v)
-if UserInfo and UserInfo.username and UserInfo.username ~= "" then
-ListMembers = ListMembers.."*"..k.." - *[@"..UserInfo.username.."](tg://user?id="..v..")\n"
-else
-ListMembers = ListMembers.."*"..k.." -* ["..v.."](tg://user?id="..v..")\n"
+
 end
 end
 local v = monsha[1]
@@ -1690,15 +1666,7 @@ Redis:srem(MisTiri.."Manger:Group"..msg.chat_id,msg.sender_id.user_id)
 Redis:srem(MisTiri.."Admin:Group"..msg.chat_id,msg.sender_id.user_id)
 Redis:srem(MisTiri.."Special:Group"..msg.chat_id,msg.sender_id.user_id)
 if Json_Info.ok == false and Json_Info.error_code == 400 and Json_Info.description == "Bad Request: CHAT_ADMIN_REQUIRED" then
-if #monsha ~= 0 then 
-local ListMembers = '\n*✠┊تاك للمالكين  \n 
-┉┉┉┉┉┉┉┉┉┉*\n'
-for k, v in pairs(monsha) do
-local UserInfo = bot.getUser(v)
-if UserInfo and UserInfo.username and UserInfo.username ~= "" then
-ListMembers = ListMembers.."*"..k.." - *[@"..UserInfo.username.."](tg://user?id="..v..")\n"
-else
-ListMembers = ListMembers.."*"..k.." -* ["..v.."](tg://user?id="..v..")\n"
+
 end
 end
 local tecxt = ListMembers.."\n✠┊ المشرف {["..names.." ](tg://user?id="..msg.sender_id.user_id..")}"..
@@ -1707,15 +1675,7 @@ send(msg_chat_id,msg_id,tecxt,"md")
 end
 end
 if Json_Info.ok == false and Json_Info.error_code == 400 and Json_Info.description == "Bad Request: can't remove chat owner" then
-if #monsha ~= 0 then 
-local ListMembers = '\n*✠┊تاك للمالكين  \n 
-┉┉┉┉┉┉┉┉┉┉*\n'
-for k, v in pairs(monsha) do
-local UserInfo = bot.getUser(v)
-if UserInfo and UserInfo.username and UserInfo.username ~= "" then
-ListMembers = ListMembers.."*"..k.." - *[@"..UserInfo.username.."](tg://user?id="..v..")\n"
-else
-ListMembers = ListMembers.."*"..k.." -* ["..v.."](tg://user?id="..v..")\n"
+
 end
 end
 local tecxt = ListMembers.."\n✠┊ المشرف {["..names.." ](tg://user?id="..msg.sender_id.user_id..")}"..
@@ -1724,15 +1684,7 @@ send(msg_chat_id,msg_id,tecxt,"md")
 end
 end
 if Json_Info.ok == true and Json_Info.result == true then
-if #monsha ~= 0 then 
-local ListMembers = '\n*✠┊تاك للمالكين  \n 
-┉┉┉┉┉┉┉┉┉┉*\n'
-for k, v in pairs(monsha) do
-local UserInfo = bot.getUser(v)
-if UserInfo and UserInfo.username and UserInfo.username ~= "" then
-ListMembers = ListMembers.."*"..k.." - *[@"..UserInfo.username.."](tg://user?id="..v..")\n"
-else
-ListMembers = ListMembers.."*"..k.." -* ["..v.."](tg://user?id="..v..")\n"
+
 end
 end
 local tecxt = ListMembers.."\n✠┊ المشرف {["..names.." ](tg://user?id="..msg.sender_id.user_id..")}"..
@@ -25247,15 +25199,6 @@ Redis:incr(MisTiri..'Num:Message:Edit'..data.chat_id..Message_Edit.sender_id.use
 if not data.Creator then
 if Message_Edit.content.Merotele == "messageContact" or Message_Edit.content.Merotele == "messageVideoNote" or Message_Edit.content.Merotele == "messageDocument" or Message_Edit.content.Merotele == "messageAudio" or Message_Edit.content.Merotele == "messageVideo" or Message_Edit.content.Merotele == "messageVoiceNote" or Message_Edit.content.Merotele == "messageAnimation" or Message_Edit.content.Merotele == "messagePhoto" then
 if Redis:get(MisTiri.."Lock:edit"..data.chat_id) then
-if #monsha ~= 0 then 
-local ListMembers = '\n*✠┊تاك للمالكين  \n 
-┉┉┉┉┉┉┉┉┉┉*\n'
-for k, v in pairs(monsha) do
-local UserInfo = bot.getUser(v)
-if UserInfo and UserInfo.username and UserInfo.username ~= "" then
-ListMembers = ListMembers.."*"..k.." - *[@"..UserInfo.username.."](tg://user?id="..v..")\n"
-else
-ListMembers = ListMembers.."*"..k.." -* ["..v.."](tg://user?id="..v..")\n"
 end
 end
  
